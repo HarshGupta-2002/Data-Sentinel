@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">DATA LEAKAGE DETECTION </a></li>
+        </ul>
+    </nav>
+    <div class="ManagePage">
+        <div class="sideBar">
+            <div class="title">DATA LEAK DETECTOR(STUFFS)</div>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/admin/home">DASHBORD</a></li>
+                <li><a href="http://127.0.0.1:5000/user/access/documents/">Access Documents</a></li>
+                <li><a href="">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        document.querySelector(".togglebtn").addEventListener('click', () => {
+            document.querySelector(".content").classList.toggle("toogleSideBar")
+        })
+    </script>
+
+</body>
+
+</html>

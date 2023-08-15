@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/LandingPage.css">
+    <link rel="stylesheet" href="../static/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+      
+
+
+
+
+    <div class="banner">Protect your sensitive data with our advanced security system. Our user-friendly solution prevents data leaks and
+    safeguards your business from cyber threats. Get peace of mind and keep your confidential information safe with our
+    state-of-the-art protection.</div>
+    <div>
+        <button class="leobtn" id="landpgbtn">Login page</button><button class="leobtn" id="getStarted">GET STARTED</button>
+    </div>
+    <script>
+document.getElementById("landpgbtn").addEventListener('click',()=>{
+    location.href="http://127.0.0.1:5000/login"
+
+
+})
+
+    document.getElementById("getStarted").addEventListener('click', () => {
+        location.href = "http://127.0.0.1:5000/getStarted"
+
+
+    })
+    </script>
+</body>
+</html>
